@@ -6,9 +6,12 @@ module.exports = {
       colors: {
         primary: '#FF6363',
         secondary: {
-          100: '#E2ED5',
-          200: '#88883',
+          100: '#9ba6b4',
+          200: '#28debd',
         },
+      },
+      fontFamily: {
+        main: ['Nunito'],
       },
     },
   },
