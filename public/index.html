@@ -14,7 +14,7 @@
         <nav>
           <div>
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="#">Eat It</a>
+              <a class="hover:text-gray-500" href="#">Eat It</a>
             </h1>
           </div>
           <ul class="text-gray-500">
@@ -79,7 +79,11 @@
 
       <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="text-primary flex justify-center md:justify-end">
-          <a class="btn border-primary md:border-2" href="#">Log in</a>
+          <a
+            class="btn border-primary md:border-2 hover:bg-primary hover:text-gray-100"
+            href="#"
+            >Log in</a
+          >
           <a class="btn border-primary md:border-2 ml-2" href="#">Sign up</a>
         </div>
         <header>
@@ -93,7 +97,7 @@
           </h4>
           <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- Cards Here -->
-            <div class="card">
+            <div class="card hover:shadow-xl">
               <img
                 src="/public/img/bfast.jpg"
                 alt=""
@@ -124,7 +128,7 @@
                 <span>25 mins</span>
               </div>
             </div>
-            <div class="card">
+            <div class="card hover:shadow-xl">
               <img
                 src="/public/img/vegan-bowl.jpg"
                 alt=""
@@ -155,7 +159,7 @@
                 <span>25 mins</span>
               </div>
             </div>
-            <div class="card">
+            <div class="card hover:shadow-xl">
               <img
                 src="/public/img/vegan-pizza.jpg"
                 alt=""
@@ -196,7 +200,9 @@
           </div>
 
           <div class="flex justify-center mt-2">
-            <button class="btn bg-blue-100">Load More</button>
+            <button class="btn bg-blue-100 hover:shadow-inner">
+              Load More
+            </button>
           </div>
         </div>
       </main>
