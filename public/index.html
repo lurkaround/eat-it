@@ -9,12 +9,12 @@
   </head>
 
   <body class="text-gray-600 font-main">
-    <div class="grid md:grid-cols-3 wrapper">
+    <div class="grid md:grid-cols-8 wrapper">
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
           <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a class="hover:text-gray-500" href="#">Eat It</a>
+              <a class="hover:text-gray-500 text-lg" href="#">Eat It</a>
             </h1>
             <div class="px-4 cursor-pointer md:hidden" id="burger">
               <svg
@@ -95,18 +95,22 @@
       </div>
       <!-- end nav -->
 
-      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <main class="px-4 py-6 bg-gray-100 md:col-span-7">
         <div class="text-primary flex justify-center md:justify-end">
           <a
-            class="btn border-primary md:border-2 hover:bg-primary hover:text-gray-100"
+            class="btn border-primary md:border-2 hover:bg-primary hover:text-gray-100 transition ease-out duration-500"
             href="#"
             >Log in</a
           >
-          <a class="btn border-primary md:border-2 ml-2" href="#">Sign up</a>
+          <a
+            class="btn border-primary md:border-2 hover:bg-primary hover:text-gray-100 ml-2 transition ease-out duration-500"
+            href="#"
+            >Sign up</a
+          >
         </div>
         <header>
           <h2 class="text-6xl font-semibold">Recipes</h2>
-          <h3 class="text-2xl font-semibold">For Eaters</h3>
+          <h3 class="text-2xl ml-24 font-semibold">For Eaters</h3>
         </header>
 
         <div>
@@ -153,9 +157,9 @@
                 class="w-full h-32 sm:h-48 object-cover"
               />
               <div class="m-4">
-                <span class="font-bold">Breakfast Recipe</span>
+                <span class="font-bold">Lunch Recipe</span>
                 <span class="block text-gray-500 text-sm">
-                  by a Breakfast eater</span
+                  by a lunch eater</span
                 >
               </div>
               <div class="badge">
@@ -184,9 +188,9 @@
                 class="w-full h-32 sm:h-48 object-cover"
               />
               <div class="m-4">
-                <span class="font-bold">Breakfast Recipe</span>
+                <span class="font-bold">Dinner Recipe</span>
                 <span class="block text-gray-500 text-sm">
-                  by a Breakfast eater</span
+                  by a dinner eater</span
                 >
               </div>
               <div class="badge">
@@ -218,7 +222,9 @@
           </div>
 
           <div class="flex justify-center mt-2">
-            <button class="btn bg-blue-100 hover:shadow-inner">
+            <button
+              class="btn bg-blue-100 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+            >
               Load More
             </button>
           </div>
