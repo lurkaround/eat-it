@@ -12,12 +12,28 @@
     <div class="grid md:grid-cols-3 wrapper">
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
-          <div>
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
               <a class="hover:text-gray-500" href="#">Eat It</a>
             </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
           </div>
-          <ul class="text-gray-500 text-sm mt-6">
+          <ul class="text-gray-500 text-sm mt-6 hidden md:block" id="menu">
             <li
               class="font-bold text-gray-700 flex justify-end px-3 py-1 border-r-4 border-primary"
             >
@@ -209,5 +225,7 @@
         </div>
       </main>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
